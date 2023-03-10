@@ -1,0 +1,2 @@
+#!/bin/bash
+ebook-convert "tanakh.html" "tanakh.pdf" --pdf-page-margin-left 20 --pdf-page-margin-top 40 --pdf-page-margin-bottom 40 --pdf-page-margin-right 20 --disable-font-rescaling --base-font-size 10 --level1-toc "//h:h2" --level2-toc "//h:h3" --level3-toc "//h:h4"  --page-breaks-before "//h:hr"

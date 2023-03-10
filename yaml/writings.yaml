@@ -1,0 +1,9 @@
+title:
+    he: כתובים
+    yi: כתובים
+    cs: Spisy
+    pl: Pisma
+    en: Writings
+books:
+  - !include writings/ester.yaml  
+  - !include writings/kohelet.yaml  
