@@ -1,26 +1,26 @@
-languages:        [he, yi, cs, pl]
+languages:        [he, cs, pl, yi]  # which languages to include
 
 layout: 
         columns:  [50%, 50%]
-        areas:    [[cs, he], [pl, yi]]
+        areas:    [[cs, he], [pl, yi]]  # position of different language paragraphs
 
-        numbering:
+        numbering:  # latin | hebrew
                     left: latin
                     right: hebrew
 
-fonts:  
+fonts:  # [font-family, font-size (pt)] 
         hebrew:   [Shofar, 14]
-        latin:    [CMU Concrete, 12]
+        latin:    [CMU Concrete, 14]
 
 flow_size: 80
 
-font_size: 12
+font_size: 18
 
 margins: 
-        top:    40
-        bottom: 40
-        left:   20
-        right:  20
+        top:    20
+        bottom: 20
+        left:   10
+        right:  10
 
 output:
         format:   pdf

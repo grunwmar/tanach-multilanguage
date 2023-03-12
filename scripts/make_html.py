@@ -138,13 +138,24 @@ css_style = f"""
 
             .c_l {{
                 font-family: '{numbering_font_left}' !important;
-                font-size: 0.8em !important;
             }}
 
 
             .c_r {{
                 font-family: '{numbering_font_right}' !important;
-                font-size: 0.8em !important;
+            }}
+
+            [data-lang=latin]{{
+                font-size: {latin_font_size}pt !important;
+            }}
+
+            [data-lang=hebrew]{{
+                font-size: {hebrew_font_size}pt !important;;
+            }}
+
+            .c_l i, .c_r i {{
+                font-style: normal;
+                font-size: 90% !important;
             }}
 
             td{{
@@ -241,14 +252,22 @@ with open("yaml/tanakh.yaml", "r") as f:
 
                     html_td_left = soup.new_tag("td")
                     html_td_left["class"] = "c_l"
-                    html_td_left.string = column_numbering(verse_index, side="left")
+                    html_td_left["data-lang"] = conf["layout"]["numbering"]["left"]
+
+                    html_td_i_left = soup.new_tag("i")
+                    html_td_i_left.string = column_numbering(verse_index, side="left")
+                    html_td_left.append(html_td_i_left)
 
                     html_td_middle = soup.new_tag("td")
                     html_td_middle["class"] = "c_m"
 
                     html_td_right = soup.new_tag("td")
                     html_td_right["class"] = "c_r"
-                    html_td_right.string = column_numbering(verse_index, side="right")
+                    html_td_right["data-lang"] = conf["layout"]["numbering"]["right"]
+
+                    html_td_i_right = soup.new_tag("i")
+                    html_td_i_right.string = column_numbering(verse_index, side="right")
+                    html_td_right.append(html_td_i_right)
 
                     html_container = soup.new_tag("div")
                     html_container["class"] = "container"
@@ -280,7 +299,7 @@ with open("yaml/tanakh.yaml", "r") as f:
 
     with tempfile.TemporaryDirectory() as tmpd:
         tmp_file = os.path.join(tmpd, "book.html")
-
+        lang_signature = "-".join(conf["languages"])
         os.environ["PY_BOOK_TMPFILE"] = tmp_file
         os.environ["PY_BOOK_FILENAME"] = conf["output"]["filename"]
         os.environ["PY_BOOK_FORMAT"] = conf["output"]["format"]
@@ -293,6 +312,7 @@ with open("yaml/tanakh.yaml", "r") as f:
         os.environ["PY_BOOK_FONT_SIZE"] = str(conf["font_size"])
 
         os.environ["PY_BOOK_TITLE"] = jdict["title"]["he"]
+        os.environ["PY_BOOK_LANGSIGNATURE"] = lang_signature
 
         with open(tmp_file, "w") as f:
             html=str(soup.prettify())
