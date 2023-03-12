@@ -1,0 +1,27 @@
+languages:        [he, yi, cs, pl]
+
+layout: 
+        columns:  [50%, 50%]
+        areas:    [[cs, he], [pl, yi]]
+
+        numbering:
+                    left: latin
+                    right: hebrew
+
+fonts:  
+        hebrew:   [Shofar, 14]
+        latin:    [CMU Concrete, 12]
+
+flow_size: 80
+
+font_size: 12
+
+margins: 
+        top:    40
+        bottom: 40
+        left:   20
+        right:  20
+
+output:
+        format:   pdf
+        filename: tanakh

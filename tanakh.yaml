@@ -1,9 +1,0 @@
-title:
-    he: תנ״ך
-    yi: תנ״ך
-    cs: Tanach
-    pl: Tanach
-    en: Tanakh
-volumes:
-  - !include yaml/torah.yaml  
-  - !include yaml/writings.yaml  
