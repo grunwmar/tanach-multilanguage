@@ -9,8 +9,8 @@ layout:
                     right: hebrew
 
 fonts:  # [font-family, font-size (pt)] 
-        hebrew:   [Shofar, 14]
-        latin:    [CMU Concrete, 14]
+        hebrew:   [Taamey Frank CLM, 14]
+        latin:    [EB Garamond, 13]
 
 flow_size: 80
 
