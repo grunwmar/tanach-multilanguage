@@ -94,16 +94,32 @@ css_style = f"""
                 border: none;
             }}
 
-            h1 {{
-                font-size: 4em !important;
-            }}
-
             h1, h2, h3, h4 {{
                 text-align: center;
                 margin: 0 auto;
                 width: 50%;
                 font-family: "{hebrew_font}";
                 margin-bottom: 1em;
+            }}
+
+            h1 {{
+                font-size: 7em !important;
+                margin-top: 2em;
+            }}
+
+
+            h2 {{
+                font-size: 5em !important;
+                margin-top: 1em;
+            }}
+
+            h3 {{
+                font-size: 3em !important;
+                margin-top: 1.5em;
+            }}
+
+            h4 {{
+                font-size: 1em !important;
             }}
 
             .verse {{
