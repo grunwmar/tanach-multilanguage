@@ -10,7 +10,7 @@ layout:
                     left: latin
                     right: hebrew
 
-        emphased_langs: {he: 'font-size: 1.2em;'}
+        emphased_langs: {he: 'font-size: 1.1em; font-weight: normal;'}
 
 fonts:  # [font-family, font-size (pt)] 
         hebrew:   [Taamey Frank CLM, 14]

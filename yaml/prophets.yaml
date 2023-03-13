@@ -1,0 +1,18 @@
+title:
+    he: נביאים
+    yi: נביאים
+    cs: Proroci
+    pl: Prorocy
+    en: Prophets
+books:
+  - !include prophets/yehoshua.yaml 
+  - !include prophets/judges.yaml 
+  - !include prophets/samuel_a.yaml 
+  - !include prophets/samuel_b.yaml 
+  - !include prophets/kings_a.yaml 
+  - !include prophets/kings_b.yaml
+  - !include prophets/isaiah.yaml 
+  - !include prophets/jeremiah.yaml  
+  - !include prophets/amos.yaml 
+  - !include prophets/ezekiel.yaml 
+  - !include prophets/samuel_a.yaml 

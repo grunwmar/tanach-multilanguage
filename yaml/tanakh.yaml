@@ -7,3 +7,4 @@ title:
 volumes:
   #- !include torah.yaml  
   - !include writings.yaml  
+  - !include prophets.yaml  
