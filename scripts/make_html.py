@@ -85,7 +85,13 @@ elif conf["layout"]["numbering"]["right"] == "hebrew":
 else:
     numbering_font_right = "none"
 
+    
+emphased_langs = ""
+if conf["layout"].get("emphased_langs"):
+    for lang, css in conf["layout"]["emphased_langs"].items():
+        emphased_langs += f"p[lang={lang}]{{ {css} }}\n"
 
+print(emphased_langs)
 css_style = f"""
             body{{
                     }}
@@ -208,6 +214,8 @@ css_style = f"""
             p[lang=pl]{{
                 grid-area: pl;
             }}
+
+            {emphased_langs}
 """
 
 soup = BeautifulSoup("<html><head></head><body></body></html>", 'lxml')

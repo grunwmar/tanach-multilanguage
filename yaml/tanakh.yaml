@@ -5,5 +5,5 @@ title:
     pl: Tanach
     en: Tanakh
 volumes:
-  - !include torah.yaml  
+  #- !include torah.yaml  
   - !include writings.yaml  

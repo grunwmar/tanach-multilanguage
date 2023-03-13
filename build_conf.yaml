@@ -1,27 +1,31 @@
+source: super_merged.yaml
+
 languages:        [he, cs, pl, yi]  # which languages to include
 
 layout: 
         columns:  [50%, 50%]
-        areas:    [[cs, he], [pl, yi]]  # position of different language paragraphs
+        areas:    [[cs, he], [pl, yi],]  # position of different language paragraphs
 
         numbering:  # latin | hebrew
                     left: latin
                     right: hebrew
 
+        emphased_langs: {he: 'font-size: 1.2em;'}
+
 fonts:  # [font-family, font-size (pt)] 
         hebrew:   [Taamey Frank CLM, 14]
-        latin:    [EB Garamond, 13]
+        latin:    [EB Garamond, 14]
 
 flow_size: 80
 
 font_size: 18
 
 margins: 
-        top:    20
-        bottom: 20
-        left:   10
-        right:  10
+        top:    35
+        bottom: 35
+        left:   30
+        right:  30
 
 output:
-        format:   pdf
+        format:  pdf
         filename: tanakh
