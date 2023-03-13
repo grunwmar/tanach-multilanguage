@@ -6,7 +6,7 @@ title:
     en: Torah
 books:
   - !include torah/bereshit.yaml  
-  - !include torah/shemot.yaml  
+  #- !include torah/shemot.yaml  
   #- !include torah/vayikra.yaml  
   #- !include torah/bemidbar.yaml  
   #- !include torah/devarim.yaml  

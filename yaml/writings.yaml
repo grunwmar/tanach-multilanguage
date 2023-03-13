@@ -6,4 +6,10 @@ title:
     en: Writings
 books:
   - !include writings/ester.yaml  
-  - !include writings/kohelet.yaml  
+  - !include writings/kohelet.yaml
+  - !include writings/job.yaml  
+  - !include writings/lamentations.yaml
+  - !include writings/proverbs.yaml
+  - !include writings/psalms.yaml
+  - !include writings/ruth.yaml
+  - !include writings/song_of_songs.yaml

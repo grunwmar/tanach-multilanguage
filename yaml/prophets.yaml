@@ -13,6 +13,16 @@ books:
   - !include prophets/kings_b.yaml
   - !include prophets/isaiah.yaml 
   - !include prophets/jeremiah.yaml  
-  - !include prophets/amos.yaml 
   - !include prophets/ezekiel.yaml 
-  - !include prophets/samuel_a.yaml 
+  - !include prophets/hosea.yaml 
+  - !include prophets/yoel.yaml 
+  - !include prophets/amos.yaml
+  - !include prophets/obadiah.yaml
+  - !include prophets/jonah.yaml
+  - !include prophets/micah.yaml
+  - !include prophets/nahum.yaml
+  - !include prophets/habakkuk.yaml
+  - !include prophets/zephaniah.yaml
+  - !include prophets/haggai.yaml
+  - !include prophets/zechariah.yaml
+  - !include prophets/malachi.yaml
